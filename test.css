@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 1300px;
+    height: 100%;
+    margin: 0 auto;
+   background: rgb(255, 207, 154);
+}
+
+.nav{
+    width: 100%;
+    height: 60px;
+    background: black;
+}
+.nav_logo{
+    width: 135px;
+    height: 100%;
+    background: url("img/logo.png");
+    float: left;
+    margin-left: 100px;
+
+}
+.nav_ul01{
+    width: 480px;
+    height: 60px;
+    float: left;
+}
+.nav_ul01>li{
+    width: 80px;
+    height: 60px;
+    float: left;
+    text-align: center;
+    line-height:80px;
+    color: white;
+    list-style: none;
+
+}
+.nav_ul01>li:hover{
+    color: #21ceff;
+}
+.nav_02{
+    width: 160px;
+    height: 60px;
+    float: left;
+    margin-left: 150px;
+}
+.nav_0201{
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    line-height: 80px;
+    color: white;
+    float: left;
+    font-size: 15px;
+}
+.nav_0201:hover{
+    color: #21ceff;
+}
+.nav_btn{
+    width: 100px;
+    height: 30px;
+    float: left;
+    background: #83f0ff;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+.nav_btn:hover{
+    background: #2b2bfb;
+}
+.slider{
+    width: 100%;
+    height: 540px;
+    position: relative;
+    overflow: hidden;
+}
+.slider .slider-img{
+    height: 100%;
+    position: relative;
+
+}
+.slider .slider-img>li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all ease-out 0.4s;
+}
+.slider .slider-img>li>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.slider .slider-img>.show{opacity: 1;}
+.slider .slider-btn{
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    text-align: center;
+}
+.slider .slider-btn>li{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;/*小手*/
+}
+.slider .slider-btn>.on{
+    background: rgba(255,255,255,0.6);
+}
+.slider .prev,.slider .next{
+    width: 60px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    background: rgba(0,0,0,0.5);
+    transition: all ease 0.3s;
+}
+.slider .prev{left: -60px;}
+.slider .next{right: -60px;}
+.slider:hover .prev{left: 0;}
+.slider:hover .next{right: 0;}
+
+#music{
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    background: url("img/bg02.png") center;
+    background-size: cover;
+    text-align: center;
+}
+#music>audio{
+    text-align: center;
+    width: 400px;
+    height: 100px;
+
+}
+#music>h2{
+    padding-top: 40px;
+    color: #f4f4f4;
+    font-size: 40px;
+}
+#music>p{
+    color: white;
+    padding-top: 20px;
+    font-size: 30px;
+}
