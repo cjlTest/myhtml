@@ -6,7 +6,7 @@ html,body{
     width: 1300px;
     height: 100%;
     margin: 0 auto;
-   background: rgb(255, 207, 154);
+   background: red;
 }
 
 .nav{
